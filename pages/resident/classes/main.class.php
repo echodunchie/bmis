@@ -5,7 +5,7 @@ class BMISClass {
 //------------------------------------------ DATABASE CONNECTION ----------------------------------------------------
     
     protected $server = "mysql:host=localhost;dbname=u896944858_db_barangay";
-    protected $user = "root";
+    protected $user = "u896944858_root";
     protected $pass = "";
     protected $options = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC);
     protected $con;

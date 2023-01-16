@@ -3,8 +3,8 @@
 
 // >!8|tgSu9J 
 $server_name = "localhost";
-$db_username = "root";
-$db_password = "";
+$db_username = "u896944858_root";
+$db_password = ">!8|tgSu9J";
 $db_name = "u896944858_db_barangay";
 
 $connection = mysqli_connect($server_name,$db_username,$db_password,$db_name);
