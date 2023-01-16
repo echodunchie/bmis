@@ -3,7 +3,7 @@
 
 
 
- //$con = mysqli_connect('localhost','root','','db_barangay') or die(mysqli_error());
+ //$con = mysqli_connect('localhost','root','','u896944858_db_barangay') or die(mysqli_error());
 
 
  $conn=mysql_connect("localhost","root","") or die("Could not connect");
