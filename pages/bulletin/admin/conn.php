@@ -8,7 +8,7 @@ $user = "root";
 
 $password = "";
 
-$dbname = "db_barangay";
+$dbname = "u896944858_db_barangay";
 
 
 

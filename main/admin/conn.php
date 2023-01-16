@@ -10,7 +10,9 @@ $password = "";
 
 $dbname = "db_barangay";
 
+// password for live database
 
+// >!8|tgSu9J 
 
 
 
