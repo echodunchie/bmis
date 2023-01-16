@@ -1,0 +1,323 @@
+
+*{
+    margin: 0 0;
+    padding: 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 1%;
+}
+.img-responsive{
+    width: 100%;
+}
+.img-curve{
+    border-radius: 15px;
+}
+
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-white{
+    color: white;
+}
+
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+a{
+    color: darkslateblue;
+    text-decoration: none;
+}
+a:hover{
+    color: blue;
+}
+
+.btn{
+    padding: 1%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+.btn-primary{
+    background-color: darkslateblue;
+    color: white;
+    cursor: pointer;
+}
+.btn-primary:hover{
+    color: white;
+    background-color: blue;
+}
+.btn-success{
+    background-color: darkslateblue;
+    color: white;
+    cursor: pointer;
+}
+.btn-success:hover{
+    color: white;
+    background-color: blue;
+}
+h2{
+    color: darkslateblue;
+    font-size: 2rem;
+    margin-bottom: 2%;
+}
+h3{
+    font-size: 1.5rem;
+}
+
+.float-container{
+    position: relative;
+}
+.float-text{
+    position: absolute;
+    bottom: 50px;
+    left: 40%;
+}
+fieldset{
+    border: 1px solid white;
+    margin: 5%;
+    padding: 3%;
+    border-radius: 5px;
+}
+
+
+/* CSSS for navbar section */
+
+.logo{
+    width: 10%;
+    float: left;
+}
+.menu{
+    line-height: 60px;
+}
+.menu ul{
+    list-style-type: none;
+}
+
+.menu ul li{
+    display: inline;
+    padding: 1%;
+    font-weight: bold;
+}
+.homepage{
+    background-image: url(../images/sagrada.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 50%;
+    filter: blur(5px);
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 45%;
+    padding: 40px 0;
+    text-align: center;
+}
+.content p{
+    padding: 0 8%;
+    line-height: 2;
+    color: #adadad;
+
+}
+.barangay-search{
+    background-image: url(../images/sagrada.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20% 0;
+}
+
+
+.imgContainer{
+    float:left;
+}
+
+.mdrrmo{
+    background-image: url(../images/lakebuhi.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 15% 0;
+}
+.location{
+    background-image: url(../images/location.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 15% 0;
+}
+.barangay-searchbody{
+    background-image: url(../images/Buhi1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 15% 0;
+}
+.barangay-searchbodys{
+    background-image: url(../images/buhi6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 15% 0;
+}
+
+
+.barangay-searching{
+    background-image: url(../images/buhi11.jpg);
+    width: 106%;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding: 15% 0;
+}
+
+
+/* CSS for Categories */
+.categories{
+    padding: 4% 0;
+}
+
+.box-3{
+    width: 28%;
+    float: left;
+    margin: 2%;
+}
+
+
+/* CSS for Food Menu */
+.barangay-menu{
+    background-color: #ececec;
+    padding: 4% 0;
+}
+
+.barangay-menu-box{
+    width: 100%;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+    background-color: white;
+    border-radius: 5px;
+}
+
+
+}
+
+.barangay-menu-img{
+    width: 20%;
+    float: left;
+}
+
+.barangay-menu-desc{
+    width: 70%;
+    float: left;
+    margin-left: 8%;
+}
+
+.barangay{
+    font-size: 1.2rem;
+    margin: 2% 0;
+}
+.barangay-detail{
+    font-size: 1rem;
+    color: #747d8c;
+}
+
+
+/* CSS for Social */
+.social ul{
+    list-style-type: none;
+}
+.social ul li{
+    display: inline;
+    padding: 1%;
+}
+
+/* for Order Section */
+.order{
+
+    width: 50%;
+    margin: 0 auto;
+}
+.input-responsive{
+    width: 96%;
+    padding: 1%;
+    margin-bottom: 3%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.order-label{
+    margin-bottom: 1%; 
+    font-weight: bold;
+}
+
+
+/* CSS for Mobile Size or Smaller Screen */
+
+@media only screen and (max-width:768px){
+    .logo{
+        width: 80%;
+        float: none;
+        margin: 1% auto;
+    }
+
+    .menu ul{
+        text-align: center;
+    }
+
+    .barangay-search input[type="search"]{
+        width: 90%;
+        padding: 2%;
+        margin-bottom: 3%;
+    }
+
+    .btn{
+        width: 91%;
+        padding: 2%;
+    }
+
+    .barangay-search{
+        padding: 10% 0;
+    }
+
+    .categories{
+        padding: 20% 0;
+    }
+    h2{
+        margin-bottom: 10%;
+    }
+    .box-3{
+        width: 100%;
+        margin: 4% auto;
+    }
+
+    .barangay-menu{
+        padding: 20% 0;
+    }
+
+    .barangay-menu-box{
+        width: 90%;
+        padding: 5%;
+        margin-bottom: 5%;
+    }
+    .social{
+        padding: 5% 0;
+    }
+    .order{
+        width: 100%;
+    }
+
+}
