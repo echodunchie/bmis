@@ -13,15 +13,15 @@
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label>First Name:</label> <span style="color:red;">*</span>
-                                <input name="txt_fname" required="" class="form-control input-sm" type="text" placeholder="First Name" />
+                                <input name="txt_fname" required="" class="form-control input-sm" type="text" placeholder="First Name" onkeyup="this.value = this.value.toUpperCase();" />
                             </div>
                             <div class="form-group">
                                 <label>Middle Name:</label> <span style="color:red;">*</span>
-                                <input name="txt_mname" class="form-control input-sm" type="text" placeholder="Middle Name" />
+                                <input name="txt_mname" class="form-control input-sm" type="text" placeholder="Middle Name" onkeyup="this.value = this.value.toUpperCase();" />
                             </div>
                             <div class="form-group">
                                 <label>Last Name:</label> <span style="color:red;">*</span>
-                                <input name="txt_lname" required="" class="form-control input-sm" type="text" placeholder="Last Name" />
+                                <input name="txt_lname" required="" class="form-control input-sm" type="text" placeholder="Last Name" onkeyup="this.value = this.value.toUpperCase();" />
                             </div>
                             <div class="form-group">
                                 <label>Username:</label> <span style="color:red;">*</span>
@@ -158,5 +158,4 @@
         }
 
     }
-
 </script>

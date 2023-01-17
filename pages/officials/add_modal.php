@@ -135,7 +135,7 @@
                 </div>
                 <div class="form-group">
                   <label>Address:</label> <span style="color:red;">*</span>
-                  <input name="txt_address" required="" class="form-control input-sm" type="text" placeholder="Address" />
+                  <input name="txt_address" required="" class="form-control input-sm" type="text" placeholder="Address" onkeyup="this.value = this.value.toUpperCase();" />
                 </div>
                 <div class="form-group">
                   <label>Start Term:</label><span style="color:red;">*</span>

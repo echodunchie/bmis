@@ -69,13 +69,13 @@
                                     <label class="control-label">Name: </label> <span style="color:red;">*</span> <br>
 
                                     <div class="col-sm-4">
-                                        <input name="txt_lname" required="" class="form-control input-sm" type="text" placeholder="Lastname" />
+                                        <input name="txt_lname" required="" class="form-control input-sm" type="text" placeholder="Lastname" onkeyup="this.value = this.value.toUpperCase();" />
                                     </div>
                                     <div class="col-sm-4">
-                                        <input name="txt_fname" required="" class="form-control input-sm col-sm-4" type="text" placeholder="Firstname" />
+                                        <input name="txt_fname" required="" class="form-control input-sm col-sm-4" type="text" placeholder="Firstname" onkeyup="this.value = this.value.toUpperCase();" />
                                     </div>
                                     <div class="col-sm-4">
-                                        <input name="txt_mname" class="form-control input-sm col-sm-4" type="text" placeholder="Middlename" />
+                                        <input name="txt_mname" class="form-control input-sm col-sm-4" type="text" placeholder="Middlename" onkeyup="this.value = this.value.toUpperCase();" />
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -126,7 +126,7 @@
                                         <input name="txt_bdate" required="" class="form-control input-sm" type="date" placeholder="Birthdate" />
                                     </div>
                                     <div class="col-sm-6">
-                                        <input name="txt_bplace" required="" class="form-control input-sm col-sm-4" type="text" placeholder="Birthplace" />
+                                        <input name="txt_bplace" required="" class="form-control input-sm col-sm-4" type="text" placeholder="Birthplace" onkeyup="this.value = this.value.toUpperCase();" />
                                     </div>
                                 </div>
 
@@ -181,7 +181,7 @@
                                 <div class="form-group">
                                     <label class="control-label">Nationality: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gender: </label> <span style="color:red;">*</span> <br>
                                     <div class="col-sm-6">
-                                        <input name="txt_national" required="" class="form-control input-sm" type="text" placeholder="Nationality" />
+                                        <input name="txt_national" required="" class="form-control input-sm" type="text" placeholder="Nationality" onkeyup="this.value = this.value.toUpperCase();" />
                                     </div>
                                     <div class="col-sm-6">
                                         <select name="ddl_gender" required="" class="form-control input-sm col-sm-4">
