@@ -25,7 +25,7 @@
                             </div>
                             <div class="form-group">
                                 <label>Position:</label> <span style="color:red;">*</span>
-                                <input name="ddl_pos" required="" class="form-control input-sm" type="text" placeholder="Last Name" onkeyup="this.value = this.value.toUpperCase();" />
+                                <input name="ddl_pos" required="" class="form-control input-sm" type="text" placeholder="Position" onkeyup="this.value = this.value.toUpperCase();" />
                             </div>
                             <div class="form-group">
                                 <label>Username:</label> <span style="color:red;">*</span>
