@@ -40,7 +40,7 @@ if (!isset($_SESSION['role'])) {
                             <div class="box-header">
                                 <div style="padding:10px;">
 
-                                    <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addZoneModal"><i class="fa fa-user-plus" aria-hidden="true"></i> Add Census Worker</button>
+                                    <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addZoneModal"><i class="fa fa-user-plus" aria-hidden="true"></i> Add Staff</button>
                                     <?php
                                     if (!isset($_SESSION['staff'])) {
                                     ?>

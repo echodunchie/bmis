@@ -13,15 +13,15 @@
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label>First Name:</label>
-                                <input name="txt_fname" class="form-control input-sm" type="text" placeholder="First name" onkeyup="this.value = this.value.toUpperCase();" />
+                                <input name="txt_fname" class="form-control input-sm" type="text" placeholder="First name" onkeyup="this.value = this.value.toUpperCase();"/>
                             </div>
                             <div class="form-group">
                                 <label>Middle Name:</label>
-                                <input name="txt_mname" class="form-control input-sm" type="text" placeholder="Middle name" onkeyup="this.value = this.value.toUpperCase();" />
+                                <input name="txt_mname" class="form-control input-sm" type="text" placeholder="Middle name" onkeyup="this.value = this.value.toUpperCase();"/>
                             </div>
                             <div class="form-group">
                                 <label>Last Name:</label>
-                                <input name="txt_lname" class="form-control input-sm" type="text" placeholder="Last name" onkeyup="this.value = this.value.toUpperCase();" />
+                                <input name="txt_lname" class="form-control input-sm" type="text" placeholder="Last name" onkeyup="this.value = this.value.toUpperCase();"/>
                             </div>
                             <div class="form-group">
                                 <label>Username:</label>
