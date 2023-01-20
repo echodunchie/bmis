@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `u896944858_db_barangay`
+-- Database: `u896944858_u896944858_db_barangay`
 --
 
 -- --------------------------------------------------------

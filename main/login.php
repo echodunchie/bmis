@@ -99,7 +99,9 @@ session_start();
                             <div class="card main-card mtop">
                                 <div class="card-body">
                                     <form method="post">
-
+                                        <center>
+                                            <div class="alert alert-danger mt-4" style="display: none" role="alert" id="error_message"></div>
+                                        </center>
                                         <label for="txt_username"> Username </label>
                                         <div class="input-container">
                                             <i class="fa fa-envelope icon"></i>
@@ -122,9 +124,7 @@ session_start();
                                         <br>
                                         <div class="row">
                                             <button type="submit" class="btn btn-primary login-button " name="userLogin">Log in</button>
-                                            <center>
-                                                <div class="alert alert-danger mt-4" style="display: none" role="alert" id="error_message"></div>
-                                            </center>
+
                                         </div>
                                     </form>
 
@@ -231,7 +231,7 @@ if (isset($_POST['userLogin'])) {
     $user = mysqli_query($con, "SELECT * from tblresident where username = '$username'");
 
     if (mysqli_num_rows($admin) > 0) {
-        
+
         $row =  mysqli_fetch_array($admin);
 
         if (password_verify($password, $row['password'])) {
@@ -240,20 +240,18 @@ if (isset($_POST['userLogin'])) {
             $_SESSION['username'] = $row['username'];
 
             header('location: ../pages/officials/officials.php');
-
         } else {
             echo '<script type="text/javascript">
                     document.getElementById("error_message").innerHTML = "Invalid Account";
                     document.getElementById("error_message").style = "block"
                 </script>';
         }
-        
-    }else if (mysqli_num_rows($zone) > 0) {
-        
+    } else if (mysqli_num_rows($zone) > 0) {
+
         $row =  mysqli_fetch_array($zone);
 
         if (password_verify($password, $row['password'])) {
-          
+
             $_SESSION['role'] = "Census";
             $_SESSION['userid'] = $row['id'];
             $_SESSION['username'] = $row['username'];
@@ -301,7 +299,7 @@ if (isset($_POST['userLogin'])) {
         $row =  mysqli_fetch_array($user);
 
         if (password_verify($password, $row['password'])) {
-            $_SESSION['role'] = $row['fname'];
+            $_SESSION['role'] = ucfirst($row['fname']);
             $_SESSION['resident'] = 1;
             $_SESSION['userid'] = $row['id'];
             $_SESSION['username'] = $row['username'];
@@ -313,7 +311,6 @@ if (isset($_POST['userLogin'])) {
                 </script>';
         }
     }
-  
 }
 ?>
 
