@@ -6,7 +6,7 @@ $host = "localhost";
 
 $user = "u896944858_root";
 
-$password= "";
+$password= ">!8|tgSu9J";
 
 $dbname = "u896944858_db_barangay";
 

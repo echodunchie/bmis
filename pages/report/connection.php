@@ -6,7 +6,7 @@
  //$con = mysqli_connect('localhost','root','','u896944858_u896944858_db_barangay') or die(mysqli_error());
 
 
- $conn=mysql_connect("localhost", "u896944858_root","") or die("Could not connect");
+ $conn=mysql_connect("localhost", "u896944858_root", ">!8|tgSu9J") or die("Could not connect");
 mysql_select_db("u896944858_db_barangay",$conn) or die("could not connect database");
 
 
