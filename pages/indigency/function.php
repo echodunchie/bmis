@@ -33,7 +33,7 @@ if(isset($_POST['btn_add'])){
     }
 
     // to update icon of indigency counter
-    $_SESSION['indigency_counter'] = mysqli_num_rows(mysqli_query($con, "SELECT * FROM tblindigency"));
+    $_SESSION['indigency_counter'] = mysqli_num_rows(mysqli_query($con, "SELECT * FROM `tblindigency` WHERE claimStatus = ''"));
 }
 
 if(isset($_POST['btn_req'])){
@@ -109,6 +109,9 @@ if(isset($_POST['btn_save']))
         $_SESSION['edited'] = 1;
         header("location: ".$_SERVER['REQUEST_URI']);
     }
+
+    // to update icon of indigency counter
+    $_SESSION['indigency_counter'] = mysqli_num_rows(mysqli_query($con, "SELECT * FROM `tblindigency` WHERE claimStatus = ''"));
 }
 
 if(isset($_POST['btn_delete']))
@@ -127,7 +130,7 @@ if(isset($_POST['btn_delete']))
         }
 
         // to update icon of indigency counter
-        $_SESSION['indigency_counter'] = mysqli_num_rows(mysqli_query($con, "SELECT * FROM tblindigency"));
+        $_SESSION['indigency_counter'] = mysqli_num_rows(mysqli_query($con, "SELECT * FROM `tblindigency` WHERE claimStatus = ''"));
     }
 }
 

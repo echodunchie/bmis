@@ -1393,7 +1393,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     Area.prototype.fillForSeries = function(i) {
       var color;
       color = Raphael.rgb2hsl(this.colorFor(this.data[i], i, 'line'));
-      return Raphael.hsl(color.h, this.options.behaveLikeLine ? color.s * 0.9 : color.s * 0.75, Math.min(0.98, this.options.behaveLikeLine ? color.l * 1.2 : color.l * 1.25));
+      // return Raphael.hsl(color.h, this.options.behaveLikeLine ? color.s * 0.9 : color.s * 0.75, Math.min(0.98, this.options.behaveLikeLine ? color.l * 1.2 : color.l * 1.25));
     };
 
     Area.prototype.drawFilledPath = function(path, fill) {
@@ -1519,7 +1519,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       leftPadding = groupWidth * (1 - this.options.barSizeRatio) / 2;
       zeroPos = this.ymin <= 0 && this.ymax >= 0 ? this.transY(0) : null;
       return this.bars = (function() {
-        var _i, _len, _ref, _results;
+        var _i, _len, _ref, _results, counter=0;
         _ref = this.data;
         _results = [];
         for (idx = _i = 0, _len = _ref.length; _i < _len; idx = ++_i) {
@@ -1547,7 +1547,12 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                 if (this.options.stacked) {
                   top -= lastTop;
                 }
-                this.drawBar(left, top, barWidth, size, this.colorFor(row, sidx, 'bar'), this.options.barOpacity, this.options.barRadius);
+                if(counter != 6){
+                  counter++
+                }else{
+                  counter=0
+                }
+                this.drawBar(left, top, barWidth, size, this.colorFor(row, counter, 'bar'), this.options.barOpacity, this.options.barRadius);
                 _results1.push(lastTop += size);
               } else {
                 _results1.push(null);

@@ -61,9 +61,9 @@
                                                 echo '
                                                 <tr>
                                                     <td><input type="checkbox" name="chk_delete[]" class="chk_delete" value="'.$row['id'].'" /></td>
-                                                    <td>'.$row['fname'].'</td>
-                                                    <td>'.$row['mname'].'</td>
-                                                    <td>'.$row['lname'].'</td>
+                                                    <td>'.ucfirst($row['fname']).'</td>
+                                                    <td>'.ucfirst($row['mname']).'</td>
+                                                    <td>'.ucfirst($row['lname']).'</td>
                                                     <td>'.$row['username'].'</td>
                                                     <td>
                                                         <button class="btn btn-primary btn-sm" data-target="#editModal'.$row['id'].'" data-toggle="modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button>

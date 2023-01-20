@@ -14,10 +14,7 @@
             <form method="post">
                 <table id="table_house_hold" class="table table-bordered table-striped">
                     <thead>
-                        <tr><?php  
-                            // if(!isset($_SESSION['staff'])) { ?>
-                            <!-- <th style="width: 20px !important;"><input type="checkbox" name="chk_delete[]" class="cbxMain" onchange="checkMain(this)"/></th> -->
-                            <?php// } ?>
+                        <tr>
                             <th>Household #</th>
                             <th>Zone</th>
                             <th>Total Members</th>

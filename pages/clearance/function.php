@@ -33,7 +33,7 @@ if(isset($_POST['btn_add'])){
     }
 
     // to update icon of clearance counter
-    $_SESSION['clearance_counter'] = mysqli_num_rows(mysqli_query($con, "SELECT * FROM tblclearance"));
+    $_SESSION['clearance_counter'] = mysqli_num_rows(mysqli_query($con, "SELECT * FROM tblclearance WHERE claimStatus=''"));
 }
 
 if(isset($_POST['btn_req'])){
@@ -110,6 +110,9 @@ if(isset($_POST['btn_save']))
         header("location: ".$_SERVER['REQUEST_URI']);
     }
 
+    // to update icon of clearance counter
+    $_SESSION['clearance_counter'] = mysqli_num_rows(mysqli_query($con, "SELECT * FROM tblclearance WHERE claimStatus=''"));
+
 }
 
 if(isset($_POST['btn_delete']))
@@ -129,7 +132,7 @@ if(isset($_POST['btn_delete']))
     }
 
     // to update icon of clearance counter
-    $_SESSION['clearance_counter'] = mysqli_num_rows(mysqli_query($con, "SELECT * FROM tblclearance"));
+    $_SESSION['clearance_counter'] = mysqli_num_rows(mysqli_query($con, "SELECT * FROM tblclearance WHERE claimStatus=''"));
 }
 
 if(isset($_POST['btn_archive']))

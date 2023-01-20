@@ -76,9 +76,9 @@ if (!isset($_SESSION['role'])) {
                                                 while ($row = mysqli_fetch_array($squery)) {
                                                     echo '
                                                     <tr>
-                                                        <td>' . $row['fname'] . '</td>
-                                                        <td>' . $row['mname'] . '</td>
-                                                        <td>' . $row['lname'] . '</td>
+                                                        <td>' . ucfirst($row['fname']) . '</td>
+                                                        <td>' . ucfirst($row['mname']) . '</td>
+                                                        <td>' . ucfirst($row['lname']) . '</td>
                                                         <td>' . $row['username'] . '</td>
                                                         <td style="display: flex; gap: 2px;">
                                                             <button class="btn btn-warning btn-sm col-6" data-target="#editModal' . $row['id'] . '" data-toggle="modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button><button class="btn btn-danger btn-sm col-6" data-target="#deleteModal' . $row['id'] . '" data-toggle="modal"><i class="fa fa-trash" aria-hidden="true"></i> Delete</button>
@@ -94,9 +94,9 @@ if (!isset($_SESSION['role'])) {
                                                 while ($row = mysqli_fetch_array($squery)) {
                                                     echo '
                                                     <tr>
-                                                        <td>' . $row['fname'] . '</td>
-                                                        <td>' . $row['mname'] . '</td>
-                                                        <td>' . $row['lname'] . '</td>
+                                                        <td>' . ucfirst($row['fname']) . '</td>
+                                                        <td>' . ucfirst($row['mname']) . '</td>
+                                                        <td>' . ucfirst($row['lname']) . '</td>
                                                         <td>' . $row['username'] . '</td>
                                                         <td style="display: flex; gap: 2px;">
                                                             <button class="btn btn-warning btn-sm col-6" data-target="#editModal' . $row['id'] . '" data-toggle="modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button><button class="btn btn-danger btn-sm col-6" data-target="#deleteModal' . $row['id'] . '" data-toggle="modal"><i class="fa fa-trash" aria-hidden="true"></i> Delete</button>

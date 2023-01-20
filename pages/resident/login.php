@@ -58,7 +58,7 @@ session_start();
             if($numrow_user > 0)
             {
                 while($row = mysqli_fetch_array($user)){
-                  $_SESSION['role'] = $row['fname'];
+                  $_SESSION['role'] = ucfirst($row['fname']);
                   $_SESSION['resident'] = 1;
                   $_SESSION['userid'] = $row['id'];
                   $_SESSION['username'] = $row['username'];

@@ -14,15 +14,15 @@
                                 <input type="hidden" value="'.$row['id'].'" name="hidden_id" id="hidden_id"/>
                                 <div class="form-group">
                                     <label>First Name:</label>
-                                    <input name="txt_edit_fname" class="form-control input-sm" type="text"  value="'.$row['fname']. '"/>
+                                    <input name="txt_edit_fname" class="form-control input-sm" type="text"  value="'.ucfirst($row['fname']). '"/>
                                 </div>
                                 <div class="form-group">
                                     <label>Middle Name:</label>
-                                    <input name="txt_edit_mname" class="form-control input-sm" type="text"  value="' . $row['mname'] . '"/>
+                                    <input name="txt_edit_mname" class="form-control input-sm" type="text"  value="' . ucfirst($row['mname']) . '"/>
                                 </div>
                                 <div class="form-group">
                                     <label>Last Name:</label>
-                                    <input name="txt_edit_lname" class="form-control input-sm" type="text"  value="' . $row['lname'] . '"/>
+                                    <input name="txt_edit_lname" class="form-control input-sm" type="text"  value="' . ucfirst($row['lname']) . '"/>
                                 </div>
                                 <div class="form-group">
                                     <label>Username:</label>

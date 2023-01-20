@@ -27,7 +27,7 @@
                                 echo '
                                 <tr>
                                     <td class="hidden"><input type="checkbox" name="chk_delete[]" class="chk_delete" value="'.$row['id'].'" /></td>
-                                    <td>'.$row['fname']. ' ' . $row['mname'] . ', ' . $row['lname'] .'</td>
+                                    <td>'.ucfirst($row['fname']). ' ' . ucfirst($row['mname']) . ', ' . ucfirst($row['lname']) .'</td>
                                     <td>'.$row['username'].'</td>
                                     <td class="hidden"><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['id'].'" data-toggle="modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></td>
                                 </tr>

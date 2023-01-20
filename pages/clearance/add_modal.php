@@ -20,7 +20,7 @@
                                             $squery = mysqli_query($con,"SELECT r.id,r.lname,r.fname,r.mname from tblresident r where ((r.id not in (select personToComplain from tblblotter)) or (r.id in (select personToComplain from tblblotter where sStatus = 'Solved')) ) and lengthofstay >= 6");
                                             while ($row = mysqli_fetch_array($squery)){
                                                 echo '
-                                                    <option value="'.$row['id'].'">'.$row['lname'].', '.$row['fname'].' '.$row['mname'].'</option>    
+                                                    <option value="'.$row['id'].'">'.ucfirst($row['lname']).', '.ucfirst($row['fname']).' '.ucfirst($row['mname']).'</option>    
                                                 ';
                                             }
                                         ?>

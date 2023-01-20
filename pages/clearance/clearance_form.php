@@ -121,9 +121,9 @@
                                 $date = date_create($row['dateRecorded']);
                                 echo '
                                 <p><br>
-                                    Last Name:&nbsp; &nbsp; <b> '.strtoupper($row['lname']).'</b><br>
-                                    First Name:&nbsp; &nbsp; <b>'.strtoupper($row['fname']).'</b><br>
-                                    Middle Name:&nbsp; &nbsp; <b>'.strtoupper($row['mname']).'</b><br>
+                                    Last Name:&nbsp; &nbsp; <b> '.strtoupper(ucfirst($row['lname'])).'</b><br>
+                                    First Name:&nbsp; &nbsp; <b>'.strtoupper(ucfirst($row['fname'])).'</b><br>
+                                    Middle Name:&nbsp; &nbsp; <b>'.strtoupper(ucfirst($row['mname'])).'</b><br>
                                     Marital Status:&nbsp; &nbsp; <b>'.strtoupper($row['civilstatus']).'</b> &nbsp;
                                     Birthdate:&nbsp; <b>'.strtoupper(date_format($bdate,"m-d-Y")).' </b>&nbsp; &nbsp; Age:&nbsp; <b>'.strtoupper($row['age']).'</b><br>
                                     Citizenship: &nbsp; &nbsp;<b>'.strtoupper($row['nationality']).'</b><br>
@@ -136,7 +136,7 @@
                                     Date Issued: <b> '.strtoupper(date_format($date,"F j, o")).'</b><br>
                                     
                                 </b><br>
-                                <center> <b>'.strtoupper($row['fname']).'<b> '.strtoupper($row['mname']).' <b>'.strtoupper($row['lname']).'<br>
+                                <center> <b>'.strtoupper(ucfirst($row['fname'])).'<b> '.strtoupper(ucfirst($row['mname'])).' <b>'.strtoupper(ucfirst($row['lname'])).'<br>
                                 Signature Over Printed Name of Claimant</b></center> <br><br> 
 
                                 <p> <b>MA. FELROSE C. SARTO<b><br>

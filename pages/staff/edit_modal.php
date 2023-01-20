@@ -16,15 +16,15 @@
                 </div>
                 <div class="form-group">
                     <label>First Name: <span style="color:gray; font-size: 10px;">(First Name)</span></label>
-                    <input name="txt_edit_fname" class="form-control input-sm" type="text" value="'.$row['fname'].'"/>
+                    <input name="txt_edit_fname" class="form-control input-sm" type="text" value="'.ucfirst($row['fname']).'"/>
                 </div>
                 <div class="form-group">
                     <label>Middle Name: <span style="color:gray; font-size: 10px;">(Middle Name)</span></label>
-                    <input name="txt_edit_mname" class="form-control input-sm" type="text" value="'.$row['mname'].'"/>
+                    <input name="txt_edit_mname" class="form-control input-sm" type="text" value="'.ucfirst($row['mname']).'"/>
                 </div>
                     <div class="form-group">
                     <label>Last Name: <span style="color:gray; font-size: 10px;">(Last name)</span></label>
-                    <input name="txt_edit_lname" class="form-control input-sm" type="text" value="'.$row['lname'].'"/>
+                    <input name="txt_edit_lname" class="form-control input-sm" type="text" value="'.ucfirst($row['lname']).'"/>
                 </div>
 
                 <div class="form-group">

@@ -10,7 +10,7 @@
         <div class="row">
             <div class="col-md-12">
                 <input type="hidden" value="'.$row['id']. '" name="hidden_id" id="hidden_id"/>
-                Remove '. $row['fname'] . '?
+                Remove '. ucfirst($row['fname']) . '?
             </div>
         </div>
         </div>

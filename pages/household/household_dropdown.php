@@ -12,7 +12,7 @@
 			echo '<option value="" disabled selected>-- Select Head of Family -- </option>';
 			while($row = mysqli_fetch_array($query))
 			{
-				echo '<option value="'.$row['resID'].'">'.$row['lname'].', '.$row['fname'].' '.$row['mname'].'</option>';
+				echo '<option value="'.$row['resID'].'">'.ucfirst($row['lname']).', '.ucfirst($row['fname']).' '.ucfirst($row['mname']).'</option>';
 			}
 		}
 		else {

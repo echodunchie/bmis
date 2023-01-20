@@ -4,9 +4,9 @@
 
 $host = "localhost";
 
-$user = "u896944858_root";
+$user = "root";
 
-$password= ">!8|tgSu9J";
+$password= "";
 
 $dbname = "u896944858_db_barangay";
 

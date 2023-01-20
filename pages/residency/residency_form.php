@@ -83,7 +83,7 @@
                                 echo '
                                 <p>
                                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                     <label style="font-size:17px;margin-right:70%;"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.strtoupper($row['fname']).'&nbsp;&nbsp;'.strtoupper($row['mname']).'&nbsp;&nbsp;'.strtoupper($row['lname']).'</b>  </label><br> 
+                                     <label style="font-size:17px;margin-right:70%;"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.strtoupper(ucfirst($row['fname'])).'&nbsp;&nbsp;'.strtoupper(ucfirst($row['mname'])).'&nbsp;&nbsp;'.strtoupper(ucfirst($row['lname'])).'</b>  </label><br> 
                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Zone'.strtoupper($row['zone']).', Sitio '.strtoupper($row['barangay']).', Sagrada Familia Buhi, Camarines Sur </b><br>
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Marital Status:&nbsp; &nbsp; <b>'.strtoupper($row['civilstatus']).'</b> &nbsp;
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
@@ -129,7 +129,7 @@
                         <div class="pull-center" style="font-size: 16px;text-align: center;">
                         <p style="font-size: 18px; padding-left:3em; padding-left:3em; text-indent:100px;text-align: justify;">This cerification is issued upon the request of the inerested party for reference and whatever purposes it may serve.<br>  
                         <center> ---oOo--- ---oOo---</center>
-                         <label style="font-size:17px;margin-center:70%;"><b><u>'.strtoupper($row['fname']).'&nbsp;&nbsp;'.strtoupper($row['mname']).'&nbsp;&nbsp;'.strtoupper($row['lname']).'</u></b>  </label><br> 
+                         <label style="font-size:17px;margin-center:70%;"><b><u>'.strtoupper(ucfirst($row['fname'])).'&nbsp;&nbsp;'.strtoupper(ucfirst($row['mname'])).'&nbsp;&nbsp;'.strtoupper(ucfirst($row['lname'])).'</u></b>  </label><br> 
                         <label style=" text-align: center;margin-center:73%">Signature Over Printed Name of Claimant</label><br>
                        <label style=" text-align: center;margin-right:73%">Prepared by:</label><br>
                           <label style="font-size:17px;margin-right:70%;"><b><u>MA. FELROSE C. SARTO</u></b></label><br>

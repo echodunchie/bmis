@@ -19,7 +19,7 @@
                                             $squery = mysqli_query($con,"SELECT id,lname,fname,mname from tblresident");
                                             while ($row = mysqli_fetch_array($squery)){
                                                 echo '
-                                                    <option value="'.$row['id'].'">'.$row['lname'].', '.$row['fname'].' '.$row['mname'].'</option>    
+                                                    <option value="'.$row['id'].'">'.ucfirst($row['lname']).', '.ucfirst($row['fname']).' '.ucfirst($row['mname']).'</option>    
                                                 ';
                                             }
                                         ?>

@@ -85,9 +85,9 @@ if (!isset($_SESSION['role'])) {
                                                         echo '
                                                     <tr>
                                                         <td style="width:70px;"><image src="image/' . basename($row['image']) . '" style="width:80px;height:80px;"/></td>
-                                                        <td><b>' . $row['fname'] . '</b></td>
-                                                        <td><b>' . $row['mname'] . '</b></td>
-                                                        <td><b>' . $row['lname'] . '</b></td>
+                                                        <td><b>' . ucfirst($row['fname']) . '</b></td>
+                                                        <td><b>' . ucfirst($row['mname']) . '</b></td>
+                                                        <td><b>' . ucfirst($row['lname']) . '</b></td>
                                                         <td>' . $row['age'] . '</td>
                                                         <td>' . $row['email'] . '</td>
                                                         <td>' . $row['mobile_number'] . '</td>
@@ -122,9 +122,9 @@ if (!isset($_SESSION['role'])) {
                                                         echo '
                                                     <tr>
                                                         <td style="width:70px;"><image src="image/' . basename($row['image']) . '" style="width:80px;height:80px;"/></td>
-                                                        <td><b>' . $row['fname'] . '</b></td>
-                                                        <td><b>' . $row['mname'] . '</b></td>
-                                                        <td><b>' . $row['lname'] . '</b></td>
+                                                        <td><b>' . ucfirst($row['fname']) . '</b></td>
+                                                        <td><b>' . ucfirst($row['mname']) . '</b></td>
+                                                        <td><b>' . ucfirst($row['lname']) . '</b></td>
                                                         <td>' . $row['age'] . '</td>
                                                         <td>' . $row['email'] . '</td>
                                                         <td>' . $row['mobile_number'] . '</td>
@@ -208,9 +208,9 @@ if (!isset($_SESSION['role'])) {
                                                     echo '
                                                     <tr>
                                                         <td style="width:70px;"><image src="image/' . basename($row['image']) . '" style="width:80px;height:80px;"/></td>
-                                                        <td><b>' . $row['fname'] . '</b></td>
-                                                        <td><b>' . $row['mname'] . '</b></td>
-                                                        <td><b>' . $row['lname'] . '</b></td>
+                                                        <td><b>' . ucfirst($row['fname']) . '</b></td>
+                                                        <td><b>' . ucfirst($row['mname']) . '</b></td>
+                                                        <td><b>' . ucfirst($row['lname']) . '</b></td>
                                                         <td>' . $row['age'] . '</td>
                                                         <td>' . $row['email'] . '</td>
                                                         <td>' . $row['mobile_number'] . '</td>
